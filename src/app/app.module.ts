@@ -11,6 +11,8 @@ import { ResetPasswordComponent } from './reset-password/reset-password.componen
 // services
 import { ConfigService } from "./services/config.service";
 import { ResetPasswordService } from "./services/reset-password.service";
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -24,6 +26,7 @@ import { ResetPasswordService } from "./services/reset-password.service";
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production }),
   ],
   providers: [
     ConfigService,
