@@ -13,12 +13,14 @@ import { ConfigService } from "./services/config.service";
 import { ResetPasswordService } from "./services/reset-password.service";
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { PrivacyPolicyComponent } from './privacy-policy/privacy-policy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
-    ResetPasswordComponent
+    ResetPasswordComponent,
+    PrivacyPolicyComponent
   ],
   imports: [
     BrowserModule,

@@ -106,6 +106,10 @@ section {
   padding-top: 20px;
   padding-bottom: 20px;
 }
+
+.footer a{
+  color: #fff;
+}
 .footer h5 {
   font-weight: 100;
 }
